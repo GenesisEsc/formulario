@@ -51,14 +51,15 @@ public class Edad extends HttpServlet {
         out.println("<html>");
         out.println("<head>");
         out.println("<title>form</title>");
+        out.println("<link rel='stylesheet' href='css/styles.css'>");
         out.println("</head>");
         out.println("<body>");
         out.println("<br>");
-        out.println("<h2>Nombre:" + nombre + "</h2>");
-        out.println("<h2>Apellido:" + apellido + "</h2>");
-        out.println("<h2>Direccion:" + direccion + "</h2>");
-        out.println("<h2>Cedula:" + cedula + "</h2>");
-        out.println("<h2>Edad de la persona:" + respuesta + "</h2>");
+        out.println("<h2>Nombre: " + nombre + "</h2>");
+        out.println("<h2>Apellido: " + apellido + "</h2>");
+        out.println("<h2>Direccion: " + direccion + "</h2>");
+        out.println("<h2>Cedula: " + cedula + "</h2>");
+        out.println("<h2>Edad de la persona: " + respuesta + "</h2>");
 
 
         out.println("</body>");

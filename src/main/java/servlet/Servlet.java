@@ -22,8 +22,6 @@ public class Servlet extends HttpServlet {
         GetParametros getParametros = new GetParametros();
         getParametros.doGet(req, resp);
 
-
-
        //capturamos los valores o los parametros de la solicitud
         String saludo = req.getParameter("saludo");
 
@@ -39,12 +37,13 @@ public class Servlet extends HttpServlet {
         out.println("<!DOCTYPE html>");
         out.println("<html>");
         out.println("<head>");
-        out.println("<title>KIUBOLAS</title>");
+        out.println("<title>Servlet</title>");
+        out.println("<link rel='stylesheet' href='css/styles.css'>");
         out.println("</head>");
         out.println("<body>");
-        out.println("<h1>   MOTOROLA</h1>");
+        out.println("<h1>Practica</h1>");
         out.println("<br>");
-        out.println("<h2>Saludando:" + saludo+ " " + nombre + "</h2>");
+        out.println("<h2>Saludando: " + saludo+ " " + nombre + "</h2>");
         out.println("</body>");
         out.println("</html>");
     }

@@ -18,7 +18,6 @@ public class GetParametros extends HttpServlet {
         //capturamos los valores o los parametros de la solicitud
         Integer id = Integer.parseInt(req.getParameter("id"));
 
-
         // inicializamos el objeto printWriter para escribir en la pantalla
         // el printWriter es como un syso pero para la web, responde con el servidor y llamamos al metodo getWriter
         PrintWriter out = resp.getWriter();
@@ -26,11 +25,12 @@ public class GetParametros extends HttpServlet {
         out.println("<!DOCTYPE html>");
         out.println("<html>");
         out.println("<head>");
-        out.println("<title>KIUBOLAS</title>");
+        out.println("<title>Id</title>");
+        out.println("<link rel='stylesheet' href='css/styles.css'>");
         out.println("</head>");
         out.println("<body>");
         out.println("<br>");
-        out.println("<h2>Id:" + id+ "</h2>");
+        out.println("<h2>Id: " + id+ "</h2>");
         out.println("</body>");
         out.println("</html>");
 
